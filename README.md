@@ -17,7 +17,7 @@ The package automatically derives Pfaffian systems of PDEs satisfied by a given 
 2. Clone or download this repository: 
 
 ```
-   git clone https://github.com/souvik5151/HyperPrecision.git
+   git clone https://github.com/HyperPrecision/HyperPrecision.git
 ```
 
 3. Place `HyperPrecision.wl` and `DESolver.m` in a directory on your Mathematica `$Path`, or in the same directory as your notebook.
