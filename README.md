@@ -1,20 +1,31 @@
 # HyperPrecision
 
-HyperPrecision: a Mathematica package for the numerical evaluation of Horn-type hypergeometric functions to arbitrary precision, including their expansion in a small parameter ε.
+`HyperPrecision` is a Mathematica package for the high-precision numerical evaluation of Horn-type hypergeometric functions, including their Laurent expansions in a small parameter \(\epsilon\).
 
-The package automatically derives Pfaffian systems of PDEs satisfied by a given hypergeometric function using [FiniteFlow](https://github.com/peraro/finiteflow). These PDE systems are then solved using the Frobenius method at a user-specified target point. The ε-dependence of the result is reconstructed by evaluating at multiple rational values of ε and performing rational interpolation over a finite field lattice, yielding the coefficients of the Laurent expansion in ε to any desired order. More details can be found in [2605.XXXXX](https://arxiv.org/abs/2605.XXXXX).
+The package automatically derives the Pfaffian system of partial differential equations satisfied by a given hypergeometric function using [FiniteFlow](https://github.com/peraro/finiteflow). The resulting system is then restricted to a one-dimensional path and solved numerically at a user-specified target point using the Frobenius method. When the input depends on \(\epsilon\), the package evaluates the system at several rational values of \(\epsilon\) and reconstructs the Laurent expansion by interpolation, yielding the expansion coefficients to the desired order and precision.
+
+More details can be found in [arXiv:2605.XXXXX](https://arxiv.org/abs/2605.XXXXX).
 
 ## Dependencies
 
-`HyperPrecision.wl` requires the following:
+`HyperPrecision.wl` requires the following external tools:
 
-- [FiniteFlow](https://github.com/peraro/finiteflow) — for automatic derivation of Pfaffian systems (T. Peraro, [arXiv:1905.08019](https://arxiv.org/abs/1905.08019))
-- [DESolver](https://gitlab.com/multiloop-pku/amflow/-/tree/master/diffeq_solver) — a slightly modified version of the differential equation solver shipped with AMFlow (X. Liu, Y.-Q. Ma, [arXiv:2201.11669](https://arxiv.org/abs/2201.11669)), is included in this repository
+- [FiniteFlow](https://github.com/peraro/finiteflow), used for the automatic derivation of Pfaffian systems  
+  T. Peraro, [arXiv:1905.08019](https://arxiv.org/abs/1905.08019)
+
+- [DESolver](https://gitlab.com/multiloop-pku/amflow/-/tree/master/diffeq_solver), a differential-equation solver distributed with AMFlow  
+  X. Liu and Y.-Q. Ma, [arXiv:2201.11669](https://arxiv.org/abs/2201.11669)
+
+A slightly modified version of `DESolver.m` is included in this repository.
+
 ## Installation
 
 1. Install [FiniteFlow](https://github.com/peraro/finiteflow) following the instructions in its repository.
 
-2. Clone or download this repository: 
+2. Clone this repository:
+
+```bash
+git clone https://github.com/HyperPrecision/HyperPrecision.git
 
 ```
    git clone https://github.com/HyperPrecision/HyperPrecision.git
