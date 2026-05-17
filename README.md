@@ -28,8 +28,6 @@ A slightly modified version of `DESolver.m` is included in this repository.
 git clone https://github.com/HyperPrecision/HyperPrecision.git
 
 ```
-   git clone https://github.com/HyperPrecision/HyperPrecision.git
-```
 
 3. Place `HyperPrecision.wl` and `DESolver.m` in a directory on your Mathematica `$Path`, or in the same directory as your notebook.
 
