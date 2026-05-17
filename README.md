@@ -1,6 +1,6 @@
 # HyperPrecision
 
-`HyperPrecision` is a Mathematica package for the high-precision numerical evaluation of Horn-type hypergeometric functions, including their Laurent expansions in a small parameter \(\epsilon\).
+`HyperPrecision` is a Mathematica package for the high-precision numerical evaluation of Horn-type hypergeometric functions, including their Laurent expansions in a small parameter.
 
 The package automatically derives the Pfaffian system of partial differential equations satisfied by a given hypergeometric function using [FiniteFlow](https://github.com/peraro/finiteflow). The resulting system is then restricted to a one-dimensional path and solved numerically at a user-specified target point using the Frobenius method. When the input depends on \(\epsilon\), the package evaluates the system at several rational values of \(\epsilon\) and reconstructs the Laurent expansion by interpolation, yielding the expansion coefficients to the desired order and precision.
 
