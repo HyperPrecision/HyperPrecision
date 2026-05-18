@@ -5,7 +5,7 @@
 
 
 (* ::Subtitle:: *)
-(*a modified version of the original version developed by Xiao Liu and Yan-Qing Ma*)
+(*a modified version of the original package developed by Xiao Liu and Yan-Qing Ma*)
 
 
 (* ::Subsection::Closed:: *)
