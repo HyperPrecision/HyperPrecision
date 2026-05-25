@@ -1,13 +1,5 @@
 (* ::Package:: *)
 
-(* ::Title:: *)
-(*DESolver*)
-
-
-(* ::Subtitle:: *)
-(*a modified version of the original package developed by Xiao Liu and Yan-Qing Ma*)
-
-
 (* ::Subsection::Closed:: *)
 (*begin*)
 
@@ -786,8 +778,7 @@ If[Length[residue] > 0, AMFPrint["homogeneous id up to" -> sp[[1,2]]]; AMFPrint[
 fid[n_]:={block[[Mod[n-1, Length[block]]+1]], totalorder+1-Quotient[n-1, Length[block]]};
 unsolved = Complement[Range[sp[[1, 2]]], Keys[reduce][[All, 1]]];
 fids = Select[fid/@unsolved, #[[2]] <= XOrder&];
-
-If[AnyTrue[getboundary@@@fids, #===Null&], AMFPrint["error: unsolved variables encountered" -> fids]; Throw[fids, "RequiredFids"]];
+If[AnyTrue[getboundary@@@fids, #===Null&], AMFPrint["error: unsolved variables encountered" -> fids]; Abort[]];
 
 (*insert boundary consitions and solve*)
 Table[f0[id[[1]], id[[2]]] = getboundary@@id; 
