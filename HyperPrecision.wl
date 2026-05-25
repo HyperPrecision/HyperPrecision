@@ -15,8 +15,10 @@
 BeginPackage["HyperPrecision`"];
 Needs["FiniteFlow`"];
 Get["DESolver.m"];
+Get["DESolver_patch.m"];
 If[$KernelCount===0,LaunchKernels[$ProcessorCount*2]];
 ParallelEvaluate[Get["DESolver.m"]];
+ParallelEvaluate[Get["DESolver_patch.m"]];
 LastUpdate="\!\(\*SuperscriptBox[\(11\), \(th\)]\) May, 2026";
 
 
