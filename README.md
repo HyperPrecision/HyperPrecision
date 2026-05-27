@@ -16,7 +16,7 @@ More details can be found in [arXiv:2605.XXXXX](https://arxiv.org/abs/2605.XXXXX
 - [DESolver](https://gitlab.com/multiloop-pku/amflow/-/tree/master/diffeq_solver), a differential-equation solver distributed with AMFlow  
   X. Liu and Y.-Q. Ma, [arXiv:2201.11669](https://arxiv.org/abs/2201.11669)
 
-The original `DESolver.m` is included in this repository for convenience, together with a small companion file `DESolver_patch.m` required for the proper interface of `DESolver.m` with `HyperPrecision.wl`. Alternatively, the latest version of `DESolver.m` can be obtained from the [AMFlow repository](https://gitlab.com/multiloop-pku/amflow/-/tree/master/diffeq_solver).
+The original `DESolver.m` is included in this repository for convenience, together with a small companion file `DESolver_patch.m` required for the proper interface of `DESolver.m` with `HyperPrecision.wl`. The user can also download the latest version of `DESolver.m` from the [AMFlow repository](https://gitlab.com/multiloop-pku/amflow/-/tree/master/diffeq_solver).
 
 ## Installation
 
