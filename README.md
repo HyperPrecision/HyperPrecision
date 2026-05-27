@@ -29,7 +29,7 @@ git clone https://github.com/HyperPrecision/HyperPrecision.git
 
 ```
 
-3. Place `HyperPrecision.wl`, `DESolver.m`, and `DESolver_patch.m` in a directory on your Mathematica `$Path`, or in the same directory as your notebook. `HyperPrecision.wl` will automatically load `FiniteFlow`, `DESolver.m` and `DESolver_patch.m`.
+3. Make sure `HyperPrecision.wl`, `DESolver.m`, and `DESolver_patch.m` are in a directory on your Mathematica `$Path`, or in the same directory as your notebook. Then, `HyperPrecision.wl` can automatically load `FiniteFlow`, `DESolver.m` and `DESolver_patch.m` when called.
 
 4. Load the package in Mathematica:
 
